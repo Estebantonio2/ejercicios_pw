@@ -1,8 +1,5 @@
 export type Punto = [number, number];
 
-const p1: Punto = [1, 2];
-const p2: Punto = [4, 6];
-
 type TipoDEP = (p1: Punto, p2: Punto) => number;
 
 export const distanciaEntrePuntos: TipoDEP = (p1, p2) => {
