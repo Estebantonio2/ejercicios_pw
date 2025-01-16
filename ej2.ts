@@ -6,7 +6,7 @@ export const distanciaEntrePuntos: TipoDEP = (p1, p2) => {
     return Math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2);
 }
 
-type TipoMP = (p: Punto, [dx, dy]: [number, number]) => Punto;
+type TipoMP = (p: Punto, tupla : [number, number]) => Punto;
 
 export const moverPunto: TipoMP = (p, tupla) => {
     p[0] += tupla[0];
